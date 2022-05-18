@@ -24,7 +24,9 @@ npx hardhat verify --network rinkeby ${contract_address}       // verify contrac
 
 ## Other sources
 
+* [ethers.js](https://github.com/ethers-io/ethers.js) - A complete Ethereum wallet implementation and utilities in JavaScript
 * [Infura](https://infura.io/) - Create RPC URL
 * [Etherscan](https://etherscan.io/) - Create API Key
   1. [Rinkeby](https://rinkeby.etherscan.io/) - Find your contract
   2. Sample Address - 0x55E20Cbf55c8d8aB088853bAF426206d51a1AA0a
+  3. [Etherscan Contract Info](https://rinkeby.etherscan.io/address/0x55E20Cbf55c8d8aB088853bAF426206d51a1AA0a)
