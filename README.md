@@ -19,6 +19,7 @@ npx hardhat test
 npx hardhat node
 npx hardhat help
 npx hardhat run scripts/deployDavisNFT.js --network rinkeby  // deploy to rinkeby network
+npx hardhat verify --network rinkeby ${contract_address}     // verify contract
 ```
 
 ## Other sources
