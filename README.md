@@ -12,14 +12,14 @@ ACCOUNT_DEPLOY_PRIVATE_KEY='your account private key'
 
 Try running some of the following tasks:
 ```shell
-npx hardhat accounts                                         // lists the available accounts
-npx hardhat compile                                          // compile contract
+npx hardhat accounts                                           // lists the available accounts
+npx hardhat compile                                            // compile contract
 npx hardhat clean
 npx hardhat test
-npx hardhat node
-npx hardhat help
-npx hardhat run scripts/deployDavisNFT.js --network rinkeby  // deploy to rinkeby network
-npx hardhat verify --network rinkeby ${contract_address}     // verify contract
+npx hardhat node                                               // run local node
+npx hardhat run scripts/deployDavisNFT.js --network localhost  // deploy to local network
+npx hardhat run scripts/deployDavisNFT.js --network rinkeby    // deploy to rinkeby network
+npx hardhat verify --network rinkeby ${contract_address}       // verify contract
 ```
 
 ## Other sources
