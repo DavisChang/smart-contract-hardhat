@@ -14,10 +14,12 @@ Try running some of the following tasks:
 ```shell
 npx hardhat accounts                                           // lists the available accounts
 npx hardhat compile                                            // compile contract
-npx hardhat clean
-npx hardhat test
-npx hardhat node                                               // run local node
+npx hardhat clean                                              // clear the cache and delete all artifacts
+npx hardhat test                                               // test contract
+npx hardhat run scripts/contract-test.js --network rinkeby     // test contract on other networks
+npx hardhat node                                               // run local private network
 npx hardhat run scripts/deployDavisNFT.js --network localhost  // deploy to local network
+npx hardhat console --network localhost                        // you can test contract on console
 npx hardhat run scripts/deployDavisNFT.js --network rinkeby    // deploy to rinkeby network
 npx hardhat verify --network rinkeby ${contract_address}       // verify contract
 ```
