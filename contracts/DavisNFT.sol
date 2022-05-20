@@ -11,7 +11,7 @@ contract DavisNFT is ERC721, Ownable {
   uint256 public maxPerWallet;
   bool public isPublicMintEnabled;
   string internal baseTokenUri;
-  address payable public withdrawWallet;
+  address public withdrawWallet;
   mapping(address => uint256) public walletMints;   // tracking mint wallet
 
   constructor() payable ERC721('DavisNFT', 'DNFT') {
@@ -19,7 +19,7 @@ contract DavisNFT is ERC721, Ownable {
     totalSupply = 0;
     maxSupply = 1000;
     maxPerWallet = 3;
-    // set withdraw wallet address
+    withdrawWallet = msg.sender;
   }
 
   function setIsPublicMintEnable(bool _isPublicMintEnabled) external onlyOwner {
