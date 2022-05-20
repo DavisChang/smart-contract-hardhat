@@ -32,6 +32,6 @@ npx hardhat verify --network rinkeby ${contract_address}       // verify contrac
 * [Infura](https://infura.io/) - Create RPC URL
 * [Etherscan](https://etherscan.io/) - Create API Key
   1. [Rinkeby](https://rinkeby.etherscan.io/) - Find your contract
-  2. Sample Address - 0x55E20Cbf55c8d8aB088853bAF426206d51a1AA0a
-  3. [Etherscan Contract Info](https://rinkeby.etherscan.io/address/0x55E20Cbf55c8d8aB088853bAF426206d51a1AA0a)
+  2. Rinkeby NFT Address - 0x16eC32AFc458D3604154DAa8F46ffb756e9da252
+  3. [Etherscan Contract Info](https://rinkeby.etherscan.io/address/0x16eC32AFc458D3604154DAa8F46ffb756e9da252)
 * [Ethers - ethers.js](https://github.com/ethers-io/ethers.js)
