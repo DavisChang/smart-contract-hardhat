@@ -8,6 +8,7 @@ You need to add .env file for this project
 RINKEBY_RPC_URL='infura rinkeby network RPC url'
 ETHERSCAN_API_KEY='etherscan api key'
 ACCOUNT_DEPLOY_PRIVATE_KEY='your account private key'
+REPORT_GAS=true
 ```
 
 Try running some of the following tasks:
@@ -32,3 +33,4 @@ npx hardhat verify --network rinkeby ${contract_address}       // verify contrac
   1. [Rinkeby](https://rinkeby.etherscan.io/) - Find your contract
   2. Sample Address - 0x55E20Cbf55c8d8aB088853bAF426206d51a1AA0a
   3. [Etherscan Contract Info](https://rinkeby.etherscan.io/address/0x55E20Cbf55c8d8aB088853bAF426206d51a1AA0a)
+* [Ethers - ethers.js](https://github.com/ethers-io/ethers.js)
