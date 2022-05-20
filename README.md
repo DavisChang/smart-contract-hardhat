@@ -17,6 +17,7 @@ npx hardhat accounts                                           // lists the avai
 npx hardhat compile                                            // compile contract
 npx hardhat clean                                              // clear the cache and delete all artifacts
 npx hardhat test                                               // test contract
+npx hardhat coverage                                           // solidity code coverage
 npx hardhat run scripts/contract-test.js --network rinkeby     // test contract on other networks
 npx hardhat node                                               // run local private network
 npx hardhat run scripts/deployDavisNFT.js --network localhost  // deploy to local network
