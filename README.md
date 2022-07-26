@@ -5,6 +5,7 @@ Using React, Hardhat, Ethers, and Chakra to create a Web3 Mint website.
 You need to add .env file for this project
 
 ```.env
+INFURA_API_KEY='infura api key'
 RINKEBY_RPC_URL='infura rinkeby network RPC url'
 ETHERSCAN_API_KEY='etherscan api key'
 ACCOUNT_DEPLOY_PRIVATE_KEY='your account private key'
@@ -36,3 +37,10 @@ npx hardhat verify --network rinkeby ${contract_address}       // verify contrac
   3. [Etherscan Contract Info](https://rinkeby.etherscan.io/address/0x16eC32AFc458D3604154DAa8F46ffb756e9da252)
   4. Rinkeby Token Address - 0xCeA78FC5Ac1F910768A6A844bF98F161eEDA1142
   5. [Etherscan Contract Code](https://rinkeby.etherscan.io/address/0xCeA78FC5Ac1F910768A6A844bF98F161eEDA1142#code)
+
+
+## Listen to Smart Contract Events
+
+```
+$ node ./services/listenEvents.js
+```
