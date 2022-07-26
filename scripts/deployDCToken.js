@@ -3,8 +3,8 @@
 //
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
-const hre = require("hardhat");
-const fs = require('fs');
+const hre = require('hardhat')
+const fs = require('fs')
 
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command
@@ -15,26 +15,26 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const DavisNFT = await hre.ethers.getContractFactory("DavisNFT");
-  const davisNFT = await DavisNFT.deploy();
+  const POPOToken = await hre.ethers.getContractFactory('DCToken')
+  const popoToken = await POPOToken.deploy()
 
-  await davisNFT.deployed();
+  await popoToken.deployed()
 
-  console.log("DavisNFT deployed to:", davisNFT.address);
+  console.info('DC Token deployed to:', popoToken.address)
 
-  // create abi file into src
+  // create abi file into contracts/abi
   const data = {
-    address: davisNFT.address,
-    abi: JSON.parse(davisNFT.interface.format('json')),
-  };
-  fs.writeFileSync('abi/davisNFT.json', JSON.stringify(data));
+    address: popoToken.address,
+    abi: JSON.parse(popoToken.interface.format('json')),
+  }
+  fs.writeFileSync('abi/dcToken.json', JSON.stringify(data))
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
 main()
   .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+  .catch(error => {
+    console.error(error)
+    process.exit(1)
+  })

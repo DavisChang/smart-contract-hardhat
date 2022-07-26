@@ -34,4 +34,5 @@ npx hardhat verify --network rinkeby ${contract_address}       // verify contrac
   1. [Rinkeby](https://rinkeby.etherscan.io/) - Find your contract
   2. Rinkeby NFT Address - 0x16eC32AFc458D3604154DAa8F46ffb756e9da252
   3. [Etherscan Contract Info](https://rinkeby.etherscan.io/address/0x16eC32AFc458D3604154DAa8F46ffb756e9da252)
-* [Ethers - ethers.js](https://github.com/ethers-io/ethers.js)
+  4. Rinkeby Token Address - 0xCeA78FC5Ac1F910768A6A844bF98F161eEDA1142
+  5. [Etherscan Contract Code](https://rinkeby.etherscan.io/address/0xCeA78FC5Ac1F910768A6A844bF98F161eEDA1142#code)
