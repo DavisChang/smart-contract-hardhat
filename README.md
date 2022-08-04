@@ -42,11 +42,17 @@ npx hardhat verify --network rinkeby ${contract_address}       // verify contrac
 ## Listen to Smart Contract Events
 
 ```
-$ node ./services/actions/listenEvents.js
+$ node ./services/actions/transferToken.js
 ```
 
 ## Transfer 10 tokens
 
 ```
-$ node ./services/transferToken.js
+$ node ./services/listenEvents.js
+```
+
+## Get block Info (JsonRpcProvider, EtherscanProvider)
+
+```
+$ node ./services/actions/getBlockInfo.js
 ```

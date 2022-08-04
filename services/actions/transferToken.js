@@ -1,5 +1,5 @@
 const ethers = require("ethers")
-const { abi } = require("../abi/dcToken.json")
+const { abi } = require("../../abi/dcToken.json")
 require("dotenv").config()
 
 async function main() {
